@@ -2,6 +2,11 @@
 
 I built a model that predicts whether someone will pass a software engineering interview. It took first place in my university Machine Learning course competition, with an AUC of 0.984.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/model_comparison_dark.png">
+  <img src="docs/model_comparison_light.png" alt="Validation AUC by model: AdaBoost 0.981, Random Forest 0.973, Naive Bayes 0.845, Logistic Regression 0.557" width="720">
+</picture>
+
 ## The problem
 
 Given about 55,000 labelled candidates with 15 mixed features (experience, salary history, education, country, tech stack, plus anonymized columns A to D), output a pass probability for 18,000 unseen candidates. The data has missing values, outliers and two high-cardinality categorical columns, and the competition was ranked on ROC AUC.
